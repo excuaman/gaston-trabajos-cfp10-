@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben 10 Multiversos: Crónicas del Omnitrix</title>
+    <!-- Enlace al archivo CSS externo, cumpliendo con la práctica de CSS externo -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Ben 10 Omniverse</h1>
+        </div>
+        <!-- Uso de la etiqueta semántica <nav> para la navegación [5, 6] -->
+        <nav role="navigation"> 
+            <ul>
+                <li><a href="#sagas">Sagas Clave</a></li>
+                <li><a href="#multiverso">El Multiverso</a></li>
+                <li><a href="#personajes">Personajes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-- Sección principal de introducción -->
+        <section id="introduccion" class="hero contenedor">
+            <article class="hero-texto">
+                <h2>Explorando la Dimensión de Ben Tennyson</h2>
+                <p>Bienvenido al Nexus donde convergen todas las realidades del portador del Omnitrix. Desde la serie original hasta el Reboot, aquí exploramos cada versión de Ben y su impacto en el cosmos [1].</p>
+                <a href="#multiverso" class="btn-primary">Descubre las realidades</a>
+            </article>
+            <div class="hero-imagen">
+                <!-- Espacio para la imagen principal de la saga que desees -->
+                <img src="placeholder-ben10-hero.png" alt="Ilustración principal de Ben 10 y el Omnitrix">
+                <!-- AQUÍ PUEDES AGREGAR LA IMAGEN PRINCIPAL A TU GUSTO -->
+            </div>
+        </section>
+
+        <!-- Sección de Sagas Clave -->
+        <section id="sagas" class="seccion-sagas contenedor">
+            <h2 class="titulo-seccion">Las Sagas que lo Iniciaron Todo</h2>
+            
+            <!-- Implementación de Flexbox para alinear el contenido de las sagas -->
+            <div class="lista-sagas flex-container">
+                
+                <article class="caja-saga">
+                    <figure>
+                        <!-- Espacio para imagen de Ben 10 Clásico -->
+                        <img src="placeholder-clasico.png" alt="Ben 10 Clásico">
+                        <!-- AQUÍ PUEDES AGREGAR UNA IMAGEN DE LA SAGA CLÁSICA -->
+                    </figure>
+                    <h3>Ben 10 (2005)</h3>
+                    <p>El verano que lo cambió todo. El inicio de la aventura con el Ben de 10 años, Gwen y el Abuelo Max [5].</p>
+                </article>
+
+                <article class="caja-saga">
+                    <figure>
+                        <!-- Espacio para imagen de Alien Force/Ultimate Alien -->
+                        <img src="placeholder-alienforce.png" alt="Ben 10 Alien Force">
+                        <!-- AQUÍ PUEDES AGREGAR UNA IMAGEN DE ALIEN FORCE / ULTIMATE ALIEN -->
+                    </figure>
+                    <h3>Alien Force / Ultimate Alien</h3>
+                    <p>Ben como adolescente, enfrentando amenazas intergalácticas más serias y dominando nuevas formas alienígenas.</p>
+                </article>
+
+                <article class="caja-saga">
+                    <figure>
+                        <!-- Espacio para imagen de Omniverse -->
+                        <img src="placeholder-omniverse.png" alt="Ben 10 Omniverse">
+                        <!-- AQUÍ PUEDES AGREGAR UNA IMAGEN DE OMNIVERSE -->
+                    </figure>
+                    <h3>Omniverse</h3>
+                    <p>Una exploración más profunda del multiverso y los viajes en el tiempo, presentando a Rook Blonko.</p>
+                </article>
+                
+            </div>
+        </section>
+
+        <!-- Sección del Multiverso -->
+        <section id="multiverso" class="seccion-multiverso contenedor">
+            <h2 class="titulo-seccion">El Vasto Multiverso de Ben 10</h2>
+            
+            <div class="grid-multiverso flex-container">
+                
+                <article class="realidad">
+                    <!-- Espacio para imagen de algún Ben alternativo (Gwen 10, Ben 23, etc.) -->
+                    <div class="imagen-placeholder">
+                        <img src="placeholder-ben23.png" alt="Ben 23 o Ben alternativo">
+                        <!-- AQUÍ PUEDES AGREGAR UNA IMAGEN DE UN BEN ALTERNATIVO -->
+                    </div>
+                    <h4>Realidad de Ben 23</h4>
+                    <p>Un Ben más arrogante y millonario con nombres "azules" para sus alienígenas. Un ejemplo fascinante de realidades alternativas.</p>
+                </article>
+
+                <article class="realidad">
+                    <div class="imagen-placeholder">
+                        <img src="placeholder-gwen10.png" alt="Gwen 10">
+                        <!-- AQUÍ PUEDES AGREGAR UNA IMAGEN DE GWEN 10 -->
+                    </div>
+                    <h4>Realidad de Gwen 10</h4>
+                    <p>¿Qué pasaría si Gwen hubiera encontrado el Omnitrix? Una saga corta pero crucial que demuestra el poder del destino.</p>
+                </article>
+                
+            </div>
+        </section>
+
+        <!-- Sección de Personajes (Contenido secundario) -->
+        <section id="personajes" class="seccion-personajes contenedor">
+            <h2 class="titulo-seccion">Galería de Aliados y Villanos</h2>
+            <div class="galeria-personajes flex-container">
+                
+                <div class="caja-personaje">
+                    <img src="placeholder-vilgax.png" alt="Vilgax, el conquistador">
+                    <!-- AQUÍ PUEDES AGREGAR UNA IMAGEN DE VILGAX -->
+                    <p>Vilgax</p>
+                </div>
+                
+                <div class="caja-personaje">
+                    <img src="placeholder-max.png" alt="Abuelo Max">
+                    <!-- AQUÍ PUEDES AGREGAR UNA IMAGEN DEL ABUELO MAX -->
+                    <p>Abuelo Max</p>
+                </div>
+                
+                <div class="caja-personaje">
+                    <img src="placeholder-gwen.png" alt="Gwen Tennyson">
+                    <!-- AQUÍ PUEDES AGREGAR UNA IMAGEN DE GWEN -->
+                    <p>Gwen</p>
+                </div>
+
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Pie de página semántico -->
+    <footer id="contacto">
+        <p>© 2024 Archivos del Multiverso Ben 10. Todos los derechos reservados.</p>
+        <p>Contacto: info@omnitrixnexus.com</p>
+    </footer>
+
+</body>
+</html>
+
+<link rel="stylesheet" href="style.css">

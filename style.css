@@ -1,0 +1,197 @@
+/* Utilizamos box-sizing: border-box para incluir padding y border en el ancho/alto total, facilitando el trabajo con el modelo de caja [7]. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables de color basadas en la paleta de Ben 10 [4] */
+:root {
+    --ben10-dark: #222222;
+    --ben10-green-primary: #64cc4f; /* Verde brillante del Omnitrix */
+    --ben10-green-secondary: #328336; /* Verde oscuro */
+    --ben10-light: #fbfbfd;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: var(--ben10-dark);
+    color: var(--ben10-light);
+}
+
+.contenedor {
+    /* Define el ancho máximo y lo centra, práctica común del modelo de caja [9] */
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo-seccion {
+    text-align: center;
+    color: var(--ben10-green-primary);
+    margin-bottom: 40px; /* Margen para separar del contenido, parte del modelo de caja [10] */
+    font-size: 2.5em;
+    border-bottom: 3px solid var(--ben10-green-secondary);
+    padding-bottom: 10px;
+}
+
+/* ---------------------------------------------------- */
+/* 2. FLEXBOX GENERAL Y NAVEGACIÓN */
+/* ---------------------------------------------------- */
+
+header {
+    background-color: var(--ben10-green-secondary);
+    padding: 15px 20px;
+    /* Usamos Flexbox para alinear el logo y el menú horizontalmente [3, 11] */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: var(--ben10-light);
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    /* Flexbox para hacer el menú horizontal */
+    display: flex; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--ben10-light);
+    padding: 10px 15px; /* Padding, parte del modelo de caja */
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--ben10-green-primary);
+    color: var(--ben10-dark);
+}
+
+/* ---------------------------------------------------- */
+/* 3. LAYOUT FLEXBOX PARA CONTENIDO PRINCIPAL */
+/* ---------------------------------------------------- */
+
+/* Sección Hero: Dos columnas (texto e imagen) */
+.hero {
+    display: flex;
+    align-items: center; /* Centrado vertical [12] */
+    padding: 80px 20px;
+}
+
+.hero-texto, .hero-imagen {
+    flex: 1; /* Permite que ambos elementos ocupen espacio equitativo */
+    padding: 20px;
+}
+
+.hero-texto h2 {
+    color: var(--ben10-green-primary);
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Botón */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--ben10-green-primary);
+    color: var(--ben10-dark);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--ben10-light);
+}
+
+
+/* ---------------------------------------------------- */
+/* 4. SECCIONES DE CONTENIDO FLEXIBLES */
+/* ---------------------------------------------------- */
+
+/* Contenedor Flex para Sagas, Multiverso y Galería */
+.flex-container {
+    display: flex;
+    /* Permite que los elementos se envuelvan si la pantalla es pequeña [13] */
+    flex-wrap: wrap; 
+    /* Distribuye el espacio entre y alrededor de los elementos [11] */
+    justify-content: space-around; 
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Estilo de las cajas individuales de saga (Box Model aplicado) */
+.caja-saga, .realidad, .caja-personaje {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    /* Flex-basis asegura que cada caja ocupe aproximadamente un tercio, pero se ajustará [14] */
+    flex-basis: calc(33% - 20px); 
+    min-width: 280px;
+}
+
+.caja-saga img, .realidad img, .caja-personaje img {
+    width: 100%; 
+    max-height: 200px;
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse [15] */
+    border: 2px solid var(--ben10-green-primary);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.realidad h4 {
+    color: var(--ben10-green-primary);
+    margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #111;
+    color: var(--ben10-light);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* ---------------------------------------------------- */
+/* 5. RESPONSIVIDAD BÁSICA */
+/* ---------------------------------------------------- */
+/* Ajuste de Flexbox para dispositivos más pequeños */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .hero {
+        /* En pantallas pequeñas, apila los elementos (texto e imagen) verticalmente [16] */
+        flex-direction: column;
+        text-align: center;
+    }
+    /* Aseguramos que los elementos individuales tomen todo el ancho en móvil */
+    .caja-saga, .realidad, .caja-personaje {
+        flex-basis: 100%; 
+        margin-bottom: 20px;
+    }
+}
