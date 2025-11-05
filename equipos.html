@@ -3,203 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Equipos Fotográficos Profesional (Sitio Ficticio)</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Página de Producto | Equipos de Fotografía Profesional</title>
+    
+    <!-- Enlace a Google Fonts: Ubuntu (300, 500, 700) para un diseño legible [6, 7] -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Enlace a Font Awesome para iconos [8, 9] (Debe usar su propio kit) -->
+    <!-- Reemplazar con el script de su kit de Font Awesome -->
+    <script src="https://kit.fontawesome.com/SU_KIT_AQUI.js" crossorigin="anonymous"></script> 
+    
+    <!-- Enlace a su archivo CSS [8] -->
+    <link rel="stylesheet" href="fotos.css">
 </head>
 <body>
-
-    <!-- BARRA SUPERIOR DE COOKIES Y ALERTA (Fuente 1) -->
-    <div class="top-alert">
-        <p>Este sitio web utiliza cookies. Al usar el sitio, usted acepta nuestra Política de privacidad. | Argentina</p>
-    </div>
-
-    <!-- ENCABEZADO Y NAVEGACIÓN PRINCIPAL (Fuente 3, 1) -->
+    
+    <!-- 1. HEADER SIMPLE [6, 10] -->
     <header>
-        <div class="header-top">
-            <h1>PHOTO GEAR FAKE</h1> <!-- Título de la tienda ficticia -->
-            <div class="utility-nav">
-                <a href="#">Ingresá a tu perfil o Registrate</a>
-                <a href="#">Carrito (* 0)</a>
-            </div>
-        </div>
-        
-        <nav class="main-nav">
-            <ul>
-                <!-- Productos Nikon (Fuente 3) -->
-                <li><a href="#">CÁMARAS</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Mirrorless</a></li>
-                        <li><a href="#">Réflex</a></li>
-                        <li><a href="#">Compactas</a></li>
-                        <li><a href="#">Ver Todas</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">LENTES</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Mirrorless</a></li>
-                        <li><a href="#">Réflex</a></li>
-                        <li><a href="#">Por Categoría</a></li>
-                        <li><a href="#">Por Tipo de Uso</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">FLASHES</a></li>
-                <li><a href="#">ACCESORIOS</a></li>
-                <li><a href="#">SPORTS OPTICS</a></li>
-                <!-- Productos Fujifilm complementarios (Fuente 1) -->
-                <li><a href="#">OTROS</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Instax</a></li>
-                        <li><a href="#">Película y Quicksnap</a></li>
-                        <li><a href="#">Informática Médica</a></li>
-                    </ul>
-                </li>
-                <!-- Navegación de Servicio (Fuente 3) -->
-                <li><a href="#">Service</a></li>
-                <li><a href="#">School</a></li>
-                <li><a href="#">Club</a></li>
-            </ul>
+        <h1>LOGO FOTO</h1>
+        <nav class="nav-principal">
+            <!-- Items de navegación basados en categorías de equipos de fotografía [3] -->
+            <a href="#">CÁMARAS</a>
+            <a href="#">LENTES</a>
+            <a href="#">FLASHES</a>
+            <a href="#">ACCESORIOS</a>
+            <a href="#">Service</a>
+            <a href="#">School</a>
+            <a href="#">Contacto</a>
         </nav>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL -->
+    <div class="container-title">
+        <p>Home » Cámaras » Mirrorless » Z-Series</p>
+    </div>
+
+    <!-- 2. MAIN CONTENT (PÁGINA DE PRODUCTO DETALLADA) [11, 12] -->
     <main>
-        <!-- SECCIÓN DESTACADA/HERO (Fuente 2, 3) -->
-        <section class="hero featured-content">
-            <div class="hero-text">
-                <h2>CONTENIDO DESTACADO</h2>
-                <p>Rendimiento impresionante, Ahora mejorado.</p>
-                <a href="#" class="cta-button">Ver Novedades</a>
+        
+        <!-- Bloque de Imagen [12] -->
+        <div class="container-img">
+            <img src="HTML/trabajo de equipos de fotografias, interfaz grafica web/img/D3S_9276-sensor.img" alt="Cámara Mirrorless Nikon Z9 Full Frame" class="product-image">
+        </div>
+        
+        <!-- Bloque de Información del Producto [12] -->
+        <div class="container-info-product">
+            
+            <div class="container-price">
+                <span class="price-value">$2,999.00</span>
+                <!-- Icono para simular la vista del siguiente producto [12] -->
+                <i class="fas fa-chevron-right"></i>
             </div>
-        </section>
+                        Set-Location -LiteralPath 'C:\Users\gasto\.vscode\Gasti.01'
+            if (-not (Test-Path .git)) { git init }
+            git add 'HTML\trabajo de equipos de fotografias, interfaz grafica web\equipos.html' 'HTML\trabajo de equipos de fotografias, interfaz grafica web\fotos.css'
+            git commit -m "Add equipos.html and fotos.css"
+            git branch -M main
+            git remote add origin https://github.com/USERNAME/REPO.git
+            git push -u origin main
+            <div class="container-details-product">
+                <!-- Selectores de Opciones (Simulando variantes de kit o color) [9, 13] -->
+                <div class="form-group">
+                    <label for="color">Color:</label>
+                    <select id="color" name="color">
+                        <option value="" disabled selected>Escoge una opción</option>
+                        <option value="negro">Negro Profesional</option>
+                        <option value="plata">Plata Retro</option>
+                    </select>
+                </div>
 
-        <!-- SECCIÓN DE NOVEDADES Y DESCARGAS (Fuente 4) -->
-        <section class="downloads-news">
-            <h3>RECIÉN ANUNCIADO</h3>
-            <div class="news-grid">
-                <div class="card product-card">
-                    <h4>180-600mm f/5.6-6.3 VR</h4>
-                    <p>Tanto alcance, tanta versatilidad</p>
-                    <a href="#">Ver Producto</a>
+                <div class="form-group">
+                    <label for="kit">Versión:</label>
+                    <select id="kit" name="kit">
+                        <option value="" disabled selected>Escoge una opción</option>
+                        <option value="cuerpo">Cuerpo (Body only)</option>
+                        <option value="kit-lente">Kit + Lente 24-70mm</option>
+                    </select>
                 </div>
-                <div class="card product-card">
-                    <h4>70-180mm f/2.8</h4>
-                    <p>Más luz, más alcance.</p>
-                    <a href="#">Ver Producto</a>
-                </div>
-                <div class="card software-card">
-                    <h4>NX Tether Versión 2.0</h4>
-                    <p>Simple, confiable</p>
-                    <a href="#">DESCARGALO</a>
-                </div>
-                <div class="card software-card">
-                    <h4>Nuevo Firmware 5.0</h4>
-                    <p>Nuevas y poderosas ventajas y mejoras</p>
-                    <a href="#">DESCARGALO</a>
-                </div>
+
+                <!-- Botón de Limpiar [13, 14] -->
+                <button class="btn btn-limpiar">Limpiar</button> 
             </div>
-        </section>
-
-        <!-- ALERTA CRÍTICA: MERCADO INFORMAL (Fuente 4, 5) -->
-        <section class="security-warning">
-            <div class="warning-box">
-                <h3>¡Recordá! Comprar en el Mercado Informal puede generarte muchos inconvenientes</h3>
-                <p>Son cámaras introducidas al país sin la intervención de su Representante Oficial. En muchas ocasiones el comprador de buena fe creyendo estar comprando más barato termina teniendo **graves problemas** y hasta inclusive perdiendo el total de su inversión.</p>
-                <p>Muchos son productos diseñados para otros mercados (Asia, USA, Europa, etc.). En muchos casos son cámaras introducidas ilegalmente pudiendo generar consecuencias también al comprador.</p>
+            
+            <!-- Bloque de Cantidad y Botón "Añadir al Carrito" [14, 15] -->
+            <div class="container-add-card">
+                <div class="container-quantity" id="quantity-control">
+                    <input type="number" value="1" min="1" class="input-quantity">
+                    <div class="btn-increment-decrement">
+                        <!-- Iconos de incremento y decremento [16] -->
+                        <i class="fas fa-chevron-up" id="increment"></i>
+                        <i class="fas fa-chevron-down" id="decrement"></i>
+                    </div>
+                </div>
                 
-                <h4>Riesgos de Productos No Autorizados:</h4>
-                <div class="risk-list">
-                    <span>Accesorios No Originales</span>
-                    <span>Sin Certificación de Seguridad</span>
-                    <span>Software Copiado y Defectuoso</span>
-                    <span>No Tienen Garantía Oficial</span>
-                    <span>Problemas de Transporte</span>
-                    <span>Sin Manuales de Usuario</span>
-                </div>
-                <a href="#" class="cta-button authorized-cta">VER COMERCIOS AUTORIZADOS</a>
+                <!-- Botón con Animación Shake (Ver CSS) [2] -->
+                <button class="btn btn-add-to-cart">
+                    <i class="fas fa-plus"></i>
+                    Añadir al Carrito
+                </button>
             </div>
-        </section>
-
-        <!-- CHAT Y CONTACTO (Fuente 6) -->
-        <section class="chat-section">
-            <div class="chat-box">
-                <h4>Chat Online</h4>
-                <p>Chateá con uno de nuestros Asesores Online y encontrá toda la información que necesitás.</p>
-                <a href="#" class="cta-button">CHATEAR AHORA</a>
-            </div>
-        </section>
-
-        <!-- FORMULARIO DE REGISTRO FICTICIO (Fuente 7) -->
-        <section class="registration-form">
-            <h3>¿No sos Usuario? Registrate</h3>
-            <form action="#">
-                <label for="birthdate">Fecha de Nacimiento.*</label>
-                <input type="date" id="birthdate" required>
-                <div>
-                    <input type="checkbox" id="newsletter">
-                    <label for="newsletter">Suscribirme al Newsletter</label>
+            
+            <!-- Bloques de Contenido Expandible (Toggles) [15, 17] -->
+            
+            <!-- Descripción (Abierto por defecto) [17, 18] -->
+            <div class="container-section" id="description-section">
+                <div class="title-section">
+                    <h4>Descripción</h4>
+                    <i class="fas fa-chevron-right"></i>
                 </div>
-                <button type="submit">Crear Perfil</button>
-                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
-            </form>
-        </section>
+                <div class="text-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, est. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Especificaciones técnicas detalladas de la cámara mirrorless Full Frame y su rendimiento mejorado con el Nuevo Firmware 2.0 [19].</p>
+                </div>
+            </div>
 
+            <!-- Información Adicional (Oculto por defecto) [20, 21] -->
+            <div class="container-section" id="info-section">
+                <div class="title-section">
+                    <h4>Información Adicional</h4>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="text-content hidden">
+                    <p>Sensor Full Frame, 45 MP, Visor OLED de alta resolución.</p>
+                    <ul>
+                        <li>Garantía: No cubre productos del Mercado Informal [19, 22].</li>
+                        <li>Compatibilidad con Lentes Mirrorless Z-Mount.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Reseñas (Oculto por defecto) [21, 23] -->
+            <div class="container-section" id="reviews-section">
+                <div class="title-section">
+                    <h4>Reseñas</h4>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="text-content hidden">
+                    <p>Aquí se integrará el formulario para calificar de una a cinco estrellas [23]. Fomentar las opiniones de los clientes puede mejorar el posicionamiento SEO [24].</p>
+                </div>
+            </div>
+
+            <!-- Bloque de Compartir en Redes Sociales [25] -->
+            <div class="container-social">
+                <span>Compartir</span>
+                <div class="container-buttons-social">
+                    <!-- Iconos de Redes Sociales (Facebook, Twitter, Instagram, Pinterest, Email) [25, 26] -->
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            
+            <!-- Advertencia sobre Mercado Informal (Crítico para SEO y Marca) [19, 27] -->
+            <div class="warning-box">
+                <p><strong>¡RECORDÁ! Comprar en el Mercado Informal puede generarte muchos inconvenientes [19].</strong></p>
+                <small>Los productos informales a menudo carecen de <strong>Garantía Oficial</strong>, Software Copiado o Manuales de Usuario [22].</small>
+            </div>
+        </div>
+        
     </main>
 
-    <!-- PIE DE PÁGINA DETALLADO (Fuente 1, 5, 6) -->
+    <!-- 3. SECCIÓN DE PRODUCTOS RELACIONADOS [26] -->
+    <section class="container-related-products">
+        <h2>Productos Relacionados</h2>
+        <div class="card-list-products">
+            
+            <!-- Ejemplo de una Tarjeta de Producto (Se puede generar dinámicamente con JS) [28, 29] -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="HTML/trabajo de equipos de fotografias, interfaz grafica web/img/61d-L1Bt2EL.webp" alt="Producto 1: Lente Teleobjetivo">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Lente Teleobjetivo 70-180mm f/2.8</h3>
+                        <p class="category">Lentes Mirrorless (RECIÉN ANUNCIADO) [19]</p>
+                    </div>
+                    <div class="price">$1,499.00</div>
+                </div>
+            </div>
+            
+            <!-- Duplicar esta CARD 3 veces más para completar la cuadrícula (grid) de 4 productos [30, 31] -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="img/accesorios.jpg" alt="Producto 2: Kit de Accesorios">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Kit de Baterías y Grip</h3>
+                        <p class="category">Accesorios</p>
+                    </div>
+                    <div class="price">$350.00</div>
+                </div>
+            </div>
+            
+             <div class="card">
+                <div class="card-img">
+                    <img src="img/flash.jpg" alt="Producto 3: Flash Profesional">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Flash Speedlight SB-5000</h3>
+                        <p class="category">Flashes</p>
+                    </div>
+                    <div class="price">$599.00</div>
+                </div>
+            </div>
+            
+             <div class="card">
+                <div class="card-img">
+                    <img src="img/binoculares.jpg" alt="Producto 4: Binoculares Sports Optics">
+                </div>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Binoculares ProStaff P7 10x42</h3>
+                        <p class="category">Sports Optics</p>
+                    </div>
+                    <div class="price">$199.00</div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- 4. FOOTER [4, 11] -->
     <footer>
-        <div class="footer-grid">
-            
-            <div class="col">
-                <h4>Productos</h4>
-                <ul>
-                    <li><a href="#">Cámaras</a></li>
-                    <li><a href="#">Lentes</a></li>
-                    <li><a href="#">Flashes</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                    <li><a href="#">Sport Optics</a></li>
-                    <li><a href="#">Instax</a></li>
-                </ul>
-            </div>
-            
-            <div class="col">
-                <h4>School & Club</h4>
-                <ul>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Workshops</a></li>
-                    <li><a href="#">Phototrips</a></li>
-                    <li><a href="#">Sedes</a></li>
-                    <li><a href="#">Staff</a></li>
-                    <li><a href="#">Beneficios Vigentes</a></li>
-                    <li><a href="#">Crear Perfil Nikon</a></li>
-                </ul>
-            </div>
-
-            <div class="col">
-                <h4>Service & Soporte</h4>
-                <ul>
-                    <li><a href="#">Consulta de Reparaciones</a></li>
-                    <li><a href="#">Receptorias</a></li>
-                    <li><a href="#">Donde comprar</a></li>
-                    <li><a href="#">Nikon Center Viamonte</a></li>
-                    <li><a href="#">Nikon Center Córdoba</a></li>
-                    <li><a href="#">Tienda Online</a></li>
-                </ul>
-            </div>
-            
-            <div class="col contact-info">
-                <h4>Contacto y Venta</h4>
-                <p>Whatsapp Ventas: +54 9351 559-9888</p>
-                <p>Contacto Ventas: ventas@nikon.com.ar</p>
-                <p>Atención al Cliente: (011) 5218-9861 Lun/Vie de 10.30 a 17.00 hs.</p>
-                <p>Contacto School: info@nikonschool.com.ar Lun/Vie. de 13.00 a 18.00 hs.</p>
-                <p>Contacto Service: service@nikon.com.ar Tel. (011) 4811-3422 Lun/Vie de 09.00 a 17.00 hs.</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2025 Udenio | Data Fiscal | Defensa al Consumidor | Términos y Condiciones | Política de Seguridad y Privacidad</p>
-        </div>
+        <p>© 2025 Todos los Derechos Reservados. Contacto: CDMX, Bogotá, Madrid [5, 32].</p>
+        <p><a href="#">Legales</a> | <a href="#">Política de Privacidad</a></p>
     </footer>
+
+    <!-- Enlace a JavaScript al final del body [8] -->
+    <script src="index.js"></script>
 <link rel="stylesheet" href="fotos.css">
 </body>
 </html>
